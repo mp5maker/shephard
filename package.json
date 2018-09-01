@@ -1,0 +1,13 @@
+{
+  "name": "shephard",
+  "version": "1.0.0",
+  "description": "**Basics**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "shepherd.js": "^2.0.0-beta.18"
+  }
+}
