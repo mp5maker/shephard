@@ -1,5 +1,30 @@
 (function(){
-    angular.module('myApp', [])
+    // Defining the app 
+    angular.module('myApp', ['ui.router', 'ngAnimate'])
+    .config(function($stateProvider, $urlRouterProvider){
+        var homeState = {
+            name: 'home',
+            url: '/home',
+            templateUrl: 'home.html'
+        }
+
+        var informationState = {
+            name: 'information',
+            url: '/information',
+            templateUrl: 'information.html'
+        }
+
+        var contactState = {
+            name: 'contact',
+            url: '/contact',
+            templateUrl: 'contact.html'
+        }
+
+        $stateProvider.state(homeState);
+        $stateProvider.state(informationState);
+        $stateProvider.state(contactState);
+        $urlRouterProvider.otherwise('home');
+    })
     .factory('Shepherd', ['$window', function ShephardFactory($window){
         if(!$window.Shepherd){
             console.log('Shepherd cannot be loaded');

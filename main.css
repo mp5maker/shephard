@@ -1,0 +1,8 @@
+.margin-right{
+    margin-right: 6rem;
+}
+
+.navbar-brand:hover{
+    opacity: 0.7;
+    transition: all linear 0.5s;
+}

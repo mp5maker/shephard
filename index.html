@@ -7,26 +7,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="/shephard/node_modules/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="/shephard/node_modules/shepherd.js/dist/css/shepherd-theme-arrows.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="/shephard/node_modules/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="/shephard/main.css"/>
 </head>
 <body ng-controller="mainCtrl">
     <div class="container">
         <div class="row">
             <div class="col my-3">
                 <h4 class="text-center">
-                    <span class="start-shepherd">
+                    <code class="start-shepherd">
                         Practicing Shepherd JS
-                    </span>
+                    </code>
                 </h4>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary" ng-click="startGuide()">
+                        Guide
+                    </button>
+                </div>
             </div>
         </div>
-        <button type="btn btn-primary" ng-click="startGuide()">
-            Guide
-        </button>
     </div>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" ui-sref="home">
+            <span class="text-light">
+                Shepherd
+            </span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapseNavigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="collapseNavigation">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a ui-sref="home" ui-sref-active="active" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a ui-sref="information" ui-sref-active="active" class="nav-link">Information</a>
+                </li>
+                <li class="nav-item margin-right">
+                    <a ui-sref="contact" ui-sref-active="active" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center my-3">
+                <ui-view></ui-view>
+            </div>
+        </div>
+    </div>
+
     <script src="/shephard/node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="/shephard/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="/shephard/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/shephard/node_modules/shepherd.js/dist/js/shepherd.min.js"></script>
     <script src="/shephard/node_modules/angular/angular.min.js"></script>
+    <script src="/shephard/node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+    <script src="/shephard/node_modules/angular-animate/angular-animate.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
