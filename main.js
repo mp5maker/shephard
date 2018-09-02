@@ -17,7 +17,7 @@
         tour.addStep('example',{
             title: "Example",
             text: "Creating first shepherd, testing it out",
-            attachTo: angular.element(".start-shepherd top"),
+            attachTo: ".start-shepherd right",
             buttons: [
                 {
                     text: 'Next',
@@ -31,24 +31,3 @@
         };
     });
 })();
-
-// const tour = new Shepherd.Tour({
-//     defaults: {
-//         classes: 'shepherd-theme-arrows',
-//         scrollTo: true,
-//     }
-// });
-
-// tour.addStep('example',{
-//     title: "Example",
-//     text: "Creating first shephard, testing it out",
-//     attachTo: ".start-shepherd bottom",
-//     buttons: [
-//         {
-//             text: 'Next',
-//             action: tour.next,
-//         }
-//     ]
-// });
-
-// tour.start();
