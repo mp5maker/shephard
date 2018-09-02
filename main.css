@@ -1,16 +1,20 @@
+/* Fixes the alignment of the navigation bar content */
 .margin-right{
     margin-right: 6rem;
 }
 
+/* Shows a subtle hover effect on the brand name */
 .navbar-brand:hover{
     opacity: 0.7;
     transition: all linear 0.5s;
 }
 
+/* Card Effect */
 .box-shadow{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+/* Overlay effect when shepherd is activated */
 .shepherd-active{
     position: fixed;
     width: 100%;
@@ -22,4 +26,41 @@
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 2;
     cursor: pointer;
+}
+
+/* Custom Button Colors for the shepherd */
+
+/* Secondary color */
+.shepherd-element .shepherd-content footer .shepherd-buttons li .shepherd-button.shepherd-custom-button-secondary{
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+
+.shepherd-element .shepherd-content footer .shepherd-buttons li .shepherd-button.shepherd-custom-button-secondary:hover{
+    color: #fff;
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+.shepherd-element .shepherd-content footer .shepherd-buttons li .shepherd-button.shepherd-custom-button-secondary:focus{
+    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+}
+
+/* Danger color */
+.shepherd-element .shepherd-content footer .shepherd-buttons li .shepherd-button.shepherd-custom-button-danger{
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.shepherd-element .shepherd-content footer .shepherd-buttons li .shepherd-button.shepherd-custom-button-danger:hover{
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.shepherd-element .shepherd-content footer .shepherd-buttons li .shepherd-button.shepherd-custom-button-danger:focus{
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
 }
